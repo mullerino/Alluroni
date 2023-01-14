@@ -22,7 +22,7 @@ const Filtros = ({filtro, setFiltro} :IFiltros)=>{
             {filtros.map(opcao=>(
                 <button className={classNames({
                     [styles.filtros_filtro]: true,
-                    [styles["filtros_filtro--ativo"]]: filtro===opcao.id,
+                    [styles["filtros_filtro--ativo"]]: filtro===opcao.id
                 })} 
                 key={opcao.id} 
                 onClick={()=> selecionarFiltro(opcao)}>

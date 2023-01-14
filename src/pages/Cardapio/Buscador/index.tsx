@@ -9,7 +9,12 @@ interface buscadorProps{
 const Buscador = ({ busca, setBusca}: buscadorProps)=>{
     return (
         <div className={styles.buscador}>
-            <input type='text' value={busca} onChange={e=>setBusca(e.target.value)}></input>
+            <input 
+            type='text'
+            value={busca} 
+            onChange={e=>setBusca(e.target.value)}
+            placeholder='Buscar'>
+            </input>
             <CgSearch size={20} color='#4C4D5E'/>
         </div>
     )
