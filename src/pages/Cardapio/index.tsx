@@ -10,8 +10,7 @@ const Cardapio = ()=>{
     const [busca,setBusca] = useState<string>('')
     const [filtro,setFiltro] = useState<number | null>(null)
     const [ordenador, setOrdenador] = useState<string>('')
-
-    console.log(filtro)
+    
     return (
         <main>
             <nav className={styles.menu}>
@@ -29,7 +28,7 @@ const Cardapio = ()=>{
                     <Filtros filtro ={filtro} setFiltro={setFiltro}></Filtros>
                     <Ordenador ordenador = {ordenador} setOrdenador = {setOrdenador}></Ordenador>
                 </div>
-            <Itens busca = {busca} filtro = {filtro}></Itens>
+            <Itens busca = {busca} filtro = {filtro} ordenador = {ordenador}></Itens>
             </section>
         </main>
     )
